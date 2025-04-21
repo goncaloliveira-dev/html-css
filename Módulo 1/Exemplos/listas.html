@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Listas</h1>
+    <p>Para fazer mais rápido a lista pode-se fazer uma abreviação, como:  <u>ol>li*5</u></p>
+    <br>
+    <h2>Listas ordenadas</h2>
+    <p>Meu percurso de estudo:</p>
+    <ol type="1"> <!-- type: 1 A a I i -->
+        <li>Estudar HTML e CSS</li>
+        <li>Estudar JavaScript</li>
+        <li>Estudar React</li>
+        <li>Estudar Node.js e APIs</li>
+        <li>Fazer Trabalhos Práticos</li>
+    </ol>
+
+    <h2>Listas não ordenadas</h2>
+    <p>Lista de compras:</p>
+    <ul type="circle"> <!-- type: disc circle square -->
+        <li>Pão</li>
+        <li>Carne</li>
+        <li>Arroz</li>
+    </ul>
+
+    <!-- Listas dentro de listas -->
+    <h2>Lista Mista</h2>
+    <u>
+        <p>Percurso de estudo detalhado:</p>
+    </u>
+    <ol type="1">
+        <li>Front-End</li>
+            <ul type="square">
+                <li>HTML + CSS</li>
+                    <ul type = "disc" >
+                        <li>Ver vídeos do <em><q>Curso em vídeo</q></em></li>
+                    </ul>
+                <li>JavaScript</li>
+                    <ul type = "disc">
+                        <li>Ver vídeos do <em><q>Curso em vídeo</q></em></li>
+                    </ul >
+                <li>React</li>
+                    <ul type = "disc">
+                        <li>Ver vídeos do <em><q>freeCodeCamp</q></em></li>
+                    </ul >
+                <li>Tailwind CSS</li>
+                    <ul type = "disc">
+                        <li>Ver vídeos do <em><q>Hora de Codar</q></em></li>
+                    </ul>
+            </ul>
+        <li>Back-End</li>
+        <ul type="square">
+            <li>Node.js</li>
+            <ul type = "disc">
+                <li>Ver vídeos do <em><q>Luiz Tools</q></em>, <q><em>DevAprender</em></q>, <em><q>Dev Samurai</q></em> e <em><q>DevPleno</q></em>, na seguinte ordem:</li>
+                <ul type="circle">
+                    <li>Node</li>
+                    <li>Express</li>
+                    <li>CRUD e Base de Dados</li>
+                    <li>APIs</li>
+                </ul>
+            </ul>
+        </ul type="square">
+        <li>Full-Stack</li>
+        <ul type="square">
+            <li>Consumo de API no React</li>
+            <li>Conectar React com API do Node.js</li>
+        </ul>
+    </ol>
+
+    <h2>Listas de Definições</h2>
+    <dl>
+        <!--Termos -->
+        <dt>HTML</dt>
+        <!--Descrição -->
+        <dd>Linguagem de marcação para o conteúdo do site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para o design do site</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a interatividade do site.</dd>
+    </dl>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+
+    <style>
+        /* SELETORES PERSONALIZADOS
+            #  = id
+            .  = class
+            :  = pseudo-class
+            :: = pseudo-element
+            >  =  children (pai > filho, ex: div > p)
+
+            À PARTE
+            Pode ter mais que uma class:
+            Exemplo: <h1 class= basic intermidiate>, só usar um espaço entre o nome das classes
+        */
+
+        body{
+            background: linear-gradient(to bottom, #398CBF, #7cb5cc) fixed;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        div{
+            width: 1000px;
+            margin: 20px auto;
+            background-color: #8ce4ff62;
+            padding: 20px;
+            border: 1px solid white;
+            border-radius: 10px;
+            transition: all 0.3s ease; /* aparecer gradualmente a div */
+        }
+
+        div:hover{
+            background-color: #17b4f1;
+            scale: 1.05;
+        }
+
+        h1{
+            color: #ffffff;
+        }
+
+        h1#principal{
+            background-color: #8ce4ff62;
+            padding: 10px;
+            margin: 20px 100px;
+            border: 1px solid #ffffff;
+            color: white;
+            text-align: center;
+        }
+
+        h2{
+            color: #143C8C;
+        }
+
+        p{
+            text-indent: 10px;
+            text-align: justify;
+            display: none; /* esconde os parágrafos */
+        }
+
+        .basic{
+            background-color: lightblue;
+            color: #0082b6;
+        }
+
+        .intermediate{
+            background-color: #fff78d;
+            color: #a18400
+        }
+
+        .advanced{
+            background-color: #ff6464;
+            color: darkred;
+        }
+
+        /* h2 está escondido*/
+        div > h2 {
+            display: none;
+        }
+
+        /* quando passo rato por cima da div, h2 aparece */
+        div:hover > h2{
+            display: block;
+        }
+
+        /* .basic + p = seleciona o parágrafo (p)  que está depois do h2 com a classe basic.
+        Ou seja, quando passa o rato por cima do .basic, aparece o parágrafo seguinte que estava escondido*/
+        .basic:hover + p,
+        .intermediate:hover + p,
+        .advanced:hover + p {
+            display: block;
+        }
+
+        /*pseudo-elements*/
+        h2::before{
+            content: '➞ '
+        }
+
+        h2::after{
+            content: '  [passe o mouse para ler os tópicos]';
+            color: rgb(71, 71, 71);
+            text-shadow: 0.5px 0.5px rgb(172, 172, 172);
+            font-size: 15px;
+        }
+
+        
+        
+    </style>
+
+</head>
+<body>
+    <h1 id="principal">IDs, Class, Pseudo-class and Pseudo-element</h1>
+
+    <div>
+        <h1>Learning HTML</h1>
+
+        <h2 class="basic">Basic HTML</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem suscipit non blanditiis, distinctio id dolor recusandae tenetur ad maiores consectetur fuga ex hic fugit officia nam cum nihil molestias ratione!</p>
+        <h2 class="intermediate">Intermediate HTML</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At facere amet voluptate magni dolore deleniti ex, neque, nesciunt molestias incidunt voluptatem atque, totam debitis id aliquam recusandae laborum qui facilis.</p>
+        <h2 class="advanced">Advanced HTML</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sunt suscipit dolores eius quidem officiis? At voluptas ex cumque? Pariatur ipsa architecto veniam officiis excepturi eos aspernatur perspiciatis vitae numquam.</p>
+    </div>
+
+    <div>
+        <h1>Learning CSS</h1>
+
+        <h2 class="basic">Basic CSS</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem suscipit non blanditiis, distinctio id dolor recusandae tenetur ad maiores consectetur fuga ex hic fugit officia nam cum nihil molestias ratione!</p>
+        <h2 class="intermediate">Intermediate CSS</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At facere amet voluptate magni dolore deleniti ex, neque, nesciunt molestias incidunt voluptatem atque, totam debitis id aliquam recusandae laborum qui facilis.</p>
+        <h2 class="advanced">Advanced CSS</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sunt suscipit dolores eius quidem officiis? At voluptas ex cumque? Pariatur ipsa architecto veniam officiis excepturi eos aspernatur perspiciatis vitae numquam.</p>
+    </div>
+    
+</body>
+</html>

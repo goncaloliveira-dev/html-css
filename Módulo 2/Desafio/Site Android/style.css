@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Android';
+    src: url(fontes/idroid.otf) format("opentype");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #6FE5A4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section#artigo{
+    max-width: 800px;
+    background: white fixed;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 0px 0px 10px 10px;
+    padding: 20px 0px;
+    box-shadow: 5px 5px 10px #00000044;
+}
+
+header {
+    background-image: linear-gradient(to bottom, #6FE5A4, #195A36);
+    color: white;
+    padding: 15px;
+    box-shadow: 0px 5px 15px #0000007e;
+}
+
+header h1{
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.452);
+}
+
+header h2{
+    text-align: center;
+    font-weight: lighter;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.452);
+    font-size: 17px;
+    margin: 30px;
+}
+
+nav a {
+    padding: 10px;
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+}
+
+header a:hover {
+    transition-duration: 0.5s;
+    color: #0c331e;
+    border-radius: 5px;
+    background-color: #2FA866;
+}
+
+#artigo h1{
+    padding: 0px 20px;
+    font-family: 'Android', Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: #296745;
+}
+
+#artigo h2{
+    padding: 0px 20px;
+    font-family: 'Android', Arial, Helvetica, sans-serif;
+    color: #296745;
+    background: linear-gradient(to right, #86faba8f, transparent);
+}
+
+p{
+    padding: 0px 20px;
+    text-indent: 2em;
+    text-align: justify;
+    line-height: 2em;
+}
+
+#artigo a{
+    color: #195A36;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+#artigo a:hover{
+    color: #15472c;
+    text-decoration: underline;
+}
+
+#artigo a::after{
+    content: '🔗';
+}
+
+img {
+    width: 100%;
+    display: block;
+    margin: 30px auto;
+}
+
+div#and-video {
+    padding: 10px 20px;
+    background-color: #296745;
+}
+
+iframe{
+    width: 100%;
+    max-width: 700px;
+    aspect-ratio: 16 / 9;
+    display: block;
+    margin: 30px auto;
+}
+
+aside{
+    margin: 40px 40px;
+    background-color: #6FE5A4;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #00000044;
+}
+
+#artigo aside h2{
+    padding: 20px;
+    border-radius: 10px 10px 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #1b5f3a;
+    color: white;
+    font-weight: bolder;
+}
+
+aside p{
+    padding: 20px;
+}
+
+aside ul{
+    list-style-type: none;
+    columns: 2;
+}
+
+aside li::before{
+    content: '✓ ';
+    font-weight: bolder;
+}
+
+footer{
+    padding: 20px;
+    color:white;
+    background-color: #195A36;
+    text-align: center;
+}

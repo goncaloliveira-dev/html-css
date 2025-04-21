@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos</title>
+</head>
+<body>
+    <h1>Vídeos hospedados e externos</h1>
+    <h2>Vídeos hespedados localmente</h2>
+    <!--Vídeos hospedados no site:
+    Pior forma porque sobrecarrega o site desnecessariamente-->
+    <video controls poster="images/banner_intruso.png" loop width="560" height="315"> <!--controls = aparecer os controles do vídeos com o play - poster = foto do banner - loop = vídeo em loop, entre outros-->
+        <!--No site, testa os vídeos de cima para baixo-->
+        <source src="video/video_intruso.mp4" type="video/mp4">
+        <source src="video/video_intruso.m4v" type="video/mp4">
+        <source src="video/video_intruso.webm" type="video/webm">
+        <source src="video/video_intruso.ogv" type="video/ogv">
+    </video>
+    
+    <h2>Vídeos externos do youtube</h2>
+    <!--Não sobrecarrega o site porque o vídeo está hospedado no youtube-->
+    <p>É so ir no youtube, clicar em "Partilhar" e em seguida "Incorporar" e terá o código para colocar em HTML</p>~
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/TCeyIwFGkYo?si=jLgM-y-Wsw1-VaAG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>

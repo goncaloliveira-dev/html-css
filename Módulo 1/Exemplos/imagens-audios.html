@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/disco.ico"> <!-- Imagem do logo do site / Favicon -->
+    <title>Imagens Dinâmicas e Aúdios</title>
+</head>
+
+<body>
+    <h1>Imagem e Aúdio</h1>
+    <p>Tente abrir este site em vários dispositivos ou aumente e diminue o tamanho do navegador</p>
+    <picture>
+        <!--O navegador lê os <source> de cima para baixo, na ordem em que aparecem-->
+        <source media="(max-width: 550px)" srcset="images/you_mad.jpg" type="image/jpg">
+        <source media="(max-width: 750px)" srcset="images/scissors.png" type="image/png">
+        <img src="images/sonic.jpeg" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzir Aúdio</h1>
+    <p>Aprender a fazer o navegador <b>testar vários formatos de aúdio</b></p>
+
+    <audio controls preload="metadata">
+        <!--O navegador testa todos os formatos de cima para baixo (evitar usar wav por ser pesado)-->
+        <source src="audio/musica_yt.mp3" type="audio/mpeg">
+        <source src="audio/musica_yt.ogg" type="audio/ogg">
+        <source src="audio/musica_yt.wav" type="audio/wav">
+        <p>O seu navegador não tem compatibilidade para reproduzir este aúdio.</p>
+    </audio>
+
+    <ul>
+        <li>Atributos do audio:</li>
+        <ul>
+            <li><b>autoplay</b> → Tenta tocar o áudio sozinho (não funciona normalmente)</li>
+            <li><b>loop</b> → Repete o áudio sem parar</li>
+            <li><b>preload="auto"</b> → Carrega o arquivo de áudio inteiro assim que a página carrega (pesa mais)</li>
+            <li><b>preload="metadata"</b> → Carrega o aúdio com os valores de duração, etc (melhor opção)</li>
+            <li><b>preload="none"</b> → Carrega o aúdio sem informações</li>
+            <li><b>muted</b> → começa sem som</li>
+        </ul>
+    </ul>
+</body>
+</html>
