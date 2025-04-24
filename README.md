@@ -31,4 +31,10 @@ Este repositório contém as seguintes pastas:
 
 1. Clone este repositório em sua máquina local:
    ```bash
-   git clone https://github.com/seu-usuario/html-css-estudo.git
+   git clone https://github.com/seu-usuario/html-css.git
+
+## Exemplo
+
+<a href="https://goncaloliveira-dev.github.io/html-css/M%C3%B3dulo%202/Desafio/Site%20Android/index.html">Link do exercício Site Android</a>
+
+
