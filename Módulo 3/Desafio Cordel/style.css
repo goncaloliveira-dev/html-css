@@ -43,13 +43,12 @@ section{
 }
 
 section p {
-    font-size: 3vw;
     margin-left: 50px;
     padding-bottom: 2em;
 }
 
 section#fundo1{
-    padding: 100px 0px;
+    padding: 50px 0px;
     background: black url(images/bg_flores.jpg) bottom right no-repeat fixed;
     background-size: cover;
     box-shadow: inset 5px 5px 10px 0px rgba(0, 0, 0, 0.486);

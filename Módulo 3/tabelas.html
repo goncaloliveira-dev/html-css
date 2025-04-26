@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas</title>
+
+    <!--ORGANIZAÇÃO:
+
+    TABLE
+        THEAD
+            TBODY
+                TFOOT
+
+    caption-> título da tabela
+    th-> cabeçalho da tabela (titulo de linhas ou colunas)
+    tr-> linha da tabela
+    td-> dado da tabela
+
+    -->
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      caption {
+        border: 1px solid black;
+        border-bottom: 0px;
+        background-color: #7a7a7a;
+        color: white;
+        padding: 10px;
+      }
+
+      td,
+      th {
+        border: 1px solid black;
+        padding: 10px 20px;
+        text-align: center;
+      }
+
+      div#container{
+        overflow: auto; /*responsividade da tabela (cria um scroll próprio para a tabela*/
+      }
+
+      table {
+        width: 700px;
+        border-collapse: collapse;
+        margin-bottom: 50px;
+      }
+
+      .titulo {
+        background-color: #a0a0a0;
+        color: white;
+      }
+
+      #mulheres {
+        background-color: lightpink;
+      }
+
+      .girl {
+        background-color: rgb(255, 223, 227);
+      }
+
+      #homens {
+        background-color: lightblue;
+      }
+
+      .man {
+        background-color: rgb(186, 206, 212);
+      }
+    </style>
+  </head>
+
+  <body>
+    <table>
+      <tr>
+        <caption>
+          Tabela de Números
+        </caption>
+      </tr>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td rowspan="2">3</td><!--Quantas linhas ocupa-->
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td colspan="3">8</td><!--Quantas colunas ocupa-->
+          <td>9</td>
+        </tr>
+        <tr>
+          <td rowspan="2">10</td>
+          <td colspan="2">11</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>14</td>
+          <td>15</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table>
+      <caption>
+        Tabela com Letras
+      </caption>
+      <tr>
+        <td colspan="4">A</td>
+        <td rowspan="4">B</td>
+      </tr>
+      <tr>
+        <td rowspan="4">C</td>
+        <td>D</td>
+        <td>E</td>
+        <td>F</td>
+      </tr>
+      <tr>
+        <td>G</td>
+        <td>H</td>
+        <td>I</td>
+      </tr>
+      <tr>
+        <td>J</td>
+        <td>L</td>
+        <td>M</td>
+      </tr>
+      <tr>
+        <td colspan="4">N</td>
+      </tr>
+    </table>
+
+    <!-- Tabela do vídeo 35-->
+
+    <div id="container">
+        <table>
+          <caption>
+            <strong>Filmes favoritos</strong>
+          </caption>
+          <thead>
+            <tr>
+              <th class="titulo" scope="col">Grupo</th> <!--scope indica ao que pertence o "th"-->
+              <th style="width: 100px" class="titulo" scope="col">Nomes</th>
+              <th colspan="3" class="titulo" scope="colgroup">Filmes</th> <!-- colgroup indica que Filmes pertence a um grupo de colunas-->
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th rowspan="3" id="mulheres" scope="rowgroup">Mulheres</th> <!-- rowgroup indica que Mulheres pertence a um grupo de linhas-->
+              <td class="girl">Ana</td>
+              <td class="girl">Alien</td>
+              <td class="girl">Rambo</td>
+              <td class="girl">Vingadores</td>
+            </tr>
+            <tr>
+              <td class="girl">Joana</td>
+              <td class="girl">Hulk</td>
+              <td class="girl">Spider Man</td>
+              <td class="girl">Batman</td>
+            </tr>
+            <tr>
+              <td class="girl">Luana</td>
+              <td class="girl">Matrix</td>
+              <td class="girl">Big Hero</td>
+              <td class="girl">Joker</td>
+            </tr>
+            <tr>
+              <th rowspan="3" id="homens" scope="rowgroup">Homens</th>
+              <td class="man">Bruno</td>
+              <td class="man">Intocáveis</td>
+              <td class="man">Amnésia</td>
+              <td class="man">Gladiador</td>
+            </tr>
+            <tr>
+              <td class="man">Daniel</td>
+              <td class="man">Wall-E</td>
+              <td class="man">Oldboy</td>
+              <td class="man">Dangal</td>
+            </tr>
+            <tr>
+              <td class="man">Fabiano</td>
+              <td class="man">Star Wars 5</td>
+              <td class="man">Taxi Driver</td>
+              <td class="man">Toy Story</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+  </body>
+</html>
