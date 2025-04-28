@@ -16,8 +16,14 @@ Atualmente, este repositório contém os exercícios dos **dois primeiros módul
 - Como aplicar estilos básicos a elementos HTML.
 - Trabalhando com seletores, propriedades e valores.
 
-### Módulo 3: Em andamento...
+### Módulo 3: Finalizado
 - Trabalhando com layouts e posicionamento de elementos.
+- Implementação de conceitos avançados de CSS.
+
+### Módulo 4: Em andamento...
+- Trabalhando com layouts e posicionamento de elementos.
+- Trabalhando a navegação de iframes.
+- Aprendendo a usar formulários.
 - Implementação de conceitos avançados de CSS.
 
 ## Estrutura do Repositório
