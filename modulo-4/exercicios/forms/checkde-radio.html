@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checked e Radio Forms</title>
+
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplos de Checked e Radio Forms</h1>
+
+    <!--Radio Button:
+    Tem que ter o mesmo "name" visto que só pode ser 1 selecionado
+    
+    value serve para o lado servidor-->
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas" value="M">
+            <label for="isxmas">Masculino</label><br>
+            <input type="radio" name="sexo" id="isxfem" value="F">
+            <label for="isxfem">Feminino</label>
+        </fieldset>
+
+        <!--Checked Box:-->
+        <fieldset>
+            <legend>Desporto</legend>
+            <input type="checkbox" name="fut" id="ifut" value="futebol">
+            <label for="ifut">Futebol</label><br>
+            <input type="checkbox" name="bas" id="ibas" value="basquete">
+            <label for="ibas">Basquete</label><br>
+            <input type="checkbox" name="ten" id="iten" value="tenis">
+            <label for="iten">Tênis</label><br>
+            <input type="checkbox" name="nat" id="inat" value="natacao">
+            <label for="inat">Natação</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar"> 
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

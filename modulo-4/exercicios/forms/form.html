@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+
+    <style>
+        * {
+
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            width: 100vw;
+        }
+
+        .btn{
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Basic Form</h1>
+
+    <!-- MÉTODOS
+            GET: Envia dados visíveis na URL (usado para dados públicos, como, nome ou pesquisa)
+            POST:  Envia da dos de forma mais oculta (usado para dados sensíveis, como senhas ou arquivos)
+    -->
+
+        <!--  autocomplete="on/off" do form ->  campos se preencham automaticamente ou não
+              autocomplete do input-> para o que se designa o campo - auxilia o autocomplete "on" do forms
+        -->
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <!-- for="id" conecta a label ao input com esse mesmo id
+            required -> campo obrigatório
+            maxlength e minlength -> máximo/minimo caracteres
+            min e max -> no caso de números
+            size -> tamanho do input
+            placeholder -> texto de dica
+            value -> aparece pré-escrito
+            title -> msg que aparece caso não esteja correto o campo
+         -->
+       <fieldset style="width: 300px"><!--Aparece um campo à volta-->
+            <legend>Dados pessoais</legend><!--Título do fieldset-->
+           <p>
+                <label for="iname">Name:</label>
+                <input type="text" name="name" id="iname" required maxlength="15" size="15" placeholder="Name..." autocomplete="given-name">
+            </p>
+            <p>
+                <label for="ilast-name">Last Name:</label>
+                <input type="text" name="last-name" id="ilast-name" required maxlength="15" placeholder="Last name..." autocomplete="family-name">
+            </p>
+                <label for="ipsw">Password:</label>
+                <input type="password" name="psw" id="ipsw" required minlength="7" placeholder="Password..." autocomplete="current-password">
+            <p>
+                <label for="iemail">Email:</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="iphone">Phone:</label>
+                <input type="tel" name="phone" id="iphone" autocomplete="phone" minlength="9" maxlength="13"  pattern="^(?:\+351|351)?9[1236]\d{7}$" placeholder="912345678" title="Insira um número de telemóvel válido (ex: 912345678 ou +351912345678)" required>
+            </p>
+            <p>
+                <input class="btn" type="submit" value="Submit">
+                <input class="btn" type="reset" type="reset" value="Reset">
+            </p>
+       </fieldset>
+    </form>
+</body>
+</html>
