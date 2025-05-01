@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    font-family: 'Courier New', Courier, monospace;
+    width: 100vw;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+header > h1{
+    text-align: center;
+    background-color: rgb(245, 215, 176);
+    padding: 10px;
+}
+
+nav{
+    display: none;
+}
+
+article{
+    padding: 20px;
+}
+
+article::after{
+    content: 'Este artigo foi retirado por www.goncalodev.com';
+    
+}
+
+section{
+    padding: 20px;
+}
+
+section h3{
+    margin-top: 15px;
+}

@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+    font-size: 1em;
+}
+
+header > h1{
+    text-align: center;
+    background-color: rgb(245, 215, 176);
+    padding: 10px;
+}
+
+nav{
+    padding: 10px;
+    background-color: antiquewhite;
+}
+
+nav ul{
+    text-align: center;
+    list-style-type: none;
+}
+
+nav li{
+    display: inline-block;
+    background-color: #f8cd97;
+    padding: 10px;
+}
+
+article{
+    display: block;
+    margin: auto;
+    padding: 20px;
+    width: 50vw;
+}
+
+section{
+    padding: 20px;
+}
+
+section h3{
+    margin-top: 15px;
+}
