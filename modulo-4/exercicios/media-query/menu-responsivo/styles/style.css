@@ -11,7 +11,7 @@ body {
 }
 
 header {
-  background-color: rgb(223, 195, 159);
+  background-color: #dfc39f;
 }
 
 header > h1 {
@@ -56,7 +56,7 @@ nav a:hover {
 }
 
 main {
-  width: 70vw;
+  width: 80vw;
   margin: 10px auto;
   background-color: #ffffff;
   padding: 20px;

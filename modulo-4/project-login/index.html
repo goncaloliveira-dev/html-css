@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/media-queries.css" />
+  </head>
+  <body>
+    <main>
+      <section id="login">
+        <div id="image"></div>
+        <div id="forms">
+          <h1>Login</h1>
+          <form action="login.php" method="post">
+            <div class="campo">
+              <label for="iuser">Username</label>
+              <input
+                type="text"
+                name="user"
+                id="iuser"
+                autocomplete="username"
+                minlength="5"
+                maxlength="15"
+                required
+                placeholder="Username"
+              />
+              <span class="material-symbols-outlined">person</span>
+            </div>
+            <div class="campo">
+              <label for="ipsw">Password</label>
+              <input
+                type="password"
+                name="psw"
+                id="ipsw"
+                autocomplete="current-password"
+                required
+                minlength="8"
+                maxlength="20"
+                placeholder="Password"
+              />
+              <span class="material-symbols-outlined">lock</span>
+            </div>
+            <div id="check">
+              <label>
+                <input type="checkbox" name="remember" id="iremember" />
+                Remember me
+              </label>
+              <a href="#">Forgot password?</a>
+            </div>
+            <input type="submit" value="Login" />
+            <p>
+              Don't have an account? <a href="#"><b>Register</b></a>
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
