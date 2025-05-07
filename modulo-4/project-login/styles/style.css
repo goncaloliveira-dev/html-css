@@ -34,7 +34,7 @@
 body {
   width: 100vw;
   height: 100vh;
-  background: var(--azul) url(../images/natureza.jpg) no-repeat center center;
+  background: var(--azul) url(../images/bg_login.jpg) no-repeat center center;
   background-size: cover;
   color: white;
 }
@@ -53,7 +53,7 @@ section#login {
   overflow: hidden;
   /*estilo glass*/
   background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   backdrop-filter: blur(5.5px);
   -webkit-backdrop-filter: blur(5.5px);
   border-radius: 10px;
@@ -64,13 +64,14 @@ section#login {
 
 section#login > div#image {
   display: block;
-  background: white url(../images/bg_login.jpg) no-repeat TOP left;
+  background: white url(../images/natureza.jpg) no-repeat center center;
+  background-size: cover;
   height: 200px;
 }
 
 section#login > div#forms {
   display: block;
-  padding: 10px;
+  padding: 20px;
 }
 
 section#login > div#forms > h1 {
@@ -79,19 +80,19 @@ section#login > div#forms > h1 {
 }
 
 div.campo {
-  border-radius: 2px solid black;
-  margin: 25px;
-  border: 1px solid white;
-  border-radius: 25px;
+  position: relative;
+  margin-bottom: 20px;
 }
 
 div.campo > input {
-  width: 89%;
+  width: 100%;
   height: 40px;
-  border: none;
+  padding: 20px 45px 20px 20px;
+  padding: 20px;
   background-color: rgba(253, 253, 253, 0);
   color: white;
-  transform: translateX(25px);
+  border: 1px solid white;
+  border-radius: 25px;
 }
 
 div.campo > input:focus {
@@ -103,8 +104,12 @@ input::placeholder {
   color: white;
 }
 
-.material-symbols-outlined {
-  transform: translate(-12px, 7px);
+.campo span {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  font-size: 20px;
+  transform: translateY(-50%);
 }
 
 .campo > label {
@@ -122,22 +127,24 @@ a:hover {
 #check {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   font-size: 0.75em;
-  margin: 10px 30px 10px 25px;
   color: white;
 }
 
 #check label {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
+}
+
+#check label input {
+  accent-color: white;
 }
 
 input[type="submit"] {
   background-color: white;
-  margin: 20px;
-  width: 85%;
+  margin: 20px 0px;
+  width: 100%;
   height: 40px;
   border: none;
   border-radius: 20px;
@@ -156,7 +163,7 @@ input[type="submit"]:active {
 }
 
 form > p {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 0.9em;
+  text-align: center;
+  font-size: 0.9em;
+  padding-top: 20px;
 }
