@@ -6,14 +6,23 @@
     <title>Flexible Box</title>
 
     <style>
-      div#container {
+      div#container-row {
+        background-color: antiquewhite;
+        height: 100px;
+        display: flex;
+        flex-direction: row; /* Main-axis será horizontal */
+        justify-content: center; /* Distribui os itens ao longo do main-axis (horizontal) */
+        align-items: flex-start; /* Alinha de acordo com o cross-axis (vertical) */
+      }
+
+      div#container-column {
+        margin-top: 10px;
+        height: 300px;
         background-color: antiquewhite;
         display: flex;
-        flex-direction: row; /*Main-axis será horizontal*/
-        justify-content: space-between; /*Aqui distribui os itens ao longo do main-axis*/
-        align-items: center; /*Alinha de acordo com o cross-axis (vertical)*/
-
-        /*caso seja na vertical troca a ordem no main-axis e do cross-axis*/
+        flex-direction: column; /* Main-axis será vertical */
+        justify-content: center; /* Aqui distribui os itens ao longo do main-axis (vertical) */
+        align-items: flex-end; /* Tentando alinhar ao longo do cross-axis (horizontal) */
       }
 
       div.item {
@@ -23,7 +32,17 @@
     </style>
   </head>
   <body>
-    <div id="container">
+    <div id="container-row">
+      <div class="item">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+      <div class="item">G</div>
+    </div>
+
+    <div id="container-column">
       <div class="item">A</div>
       <div class="item">B</div>
       <div class="item">C</div>
