@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexible Box</title>
+
+    <style>
+      div#container {
+        background-color: antiquewhite;
+        display: flex;
+        flex-direction: row; /*Main-axis será horizontal*/
+        justify-content: space-between; /*Aqui distribui os itens ao longo do main-axis*/
+        align-items: center; /*Alinha de acordo com o cross-axis (vertical)*/
+
+        /*caso seja na vertical troca a ordem no main-axis e do cross-axis*/
+      }
+
+      div.item {
+        background-color: aquamarine;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="item">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+      <div class="item">G</div>
+    </div>
+  </body>
+</html>
