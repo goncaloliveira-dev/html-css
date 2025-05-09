@@ -11,18 +11,22 @@
         height: 100px;
         display: flex;
         flex-direction: row; /* Main-axis será horizontal */
-        justify-content: center; /* Distribui os itens ao longo do main-axis (horizontal) */
-        align-items: flex-start; /* Alinha de acordo com o cross-axis (vertical) */
+        justify-content: flex-start; /* Distribui os itens ao longo do main-axis (horizontal) */
+        align-items: center; /* Alinha de acordo com o cross-axis (vertical) */
+        flex-wrap: wrap; /*Quebra o elemento para a linha de baixo*/
+
+        flex-flow: row wrap; /* flex direction + flex-wrap (shorthand)/*/
       }
 
       div#container-column {
         margin-top: 10px;
-        height: 300px;
+        height: 100px;
         background-color: antiquewhite;
         display: flex;
         flex-direction: column; /* Main-axis será vertical */
         justify-content: center; /* Aqui distribui os itens ao longo do main-axis (vertical) */
-        align-items: flex-end; /* Tentando alinhar ao longo do cross-axis (horizontal) */
+        align-items: center; /* Tentando alinhar ao longo do cross-axis (horizontal) */
+        flex-wrap: wrap; /*Quebra o elemento para a coluna do lado*/
       }
 
       div.item {
@@ -33,23 +37,23 @@
   </head>
   <body>
     <div id="container-row">
-      <div class="item">A</div>
-      <div class="item">B</div>
-      <div class="item">C</div>
-      <div class="item">D</div>
-      <div class="item">E</div>
-      <div class="item">F</div>
-      <div class="item">G</div>
+      <div class="item">Exemplo A</div>
+      <div class="item">Exemplo B</div>
+      <div class="item">Exemplo C</div>
+      <div class="item">Exemplo D</div>
+      <div class="item">Exemplo E</div>
+      <div class="item">Exemplo F</div>
+      <div class="item">Exemplo G</div>
     </div>
 
     <div id="container-column">
-      <div class="item">A</div>
-      <div class="item">B</div>
-      <div class="item">C</div>
-      <div class="item">D</div>
-      <div class="item">E</div>
-      <div class="item">F</div>
-      <div class="item">G</div>
+      <div class="item">Exemplo A</div>
+      <div class="item">Exemplo B</div>
+      <div class="item">Exemplo C</div>
+      <div class="item">Exemplo D</div>
+      <div class="item">Exemplo E</div>
+      <div class="item">Exemplo F</div>
+      <div class="item">Exemplo G</div>
     </div>
   </body>
 </html>

@@ -40,16 +40,14 @@ body {
 }
 
 main {
-  position: relative;
   width: 100vw;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 section#login {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   overflow: hidden;
   /*estilo glass*/
   background: rgba(255, 255, 255, 0.2);
@@ -120,8 +118,11 @@ a {
   color: white;
   text-decoration: none;
 }
+
 a:hover {
-  color: #c1d4d9;
+  color: lightgray;
+  text-decoration: underline;
+  transition: .5s ease-in-out;
 }
 
 #check {
